@@ -1,10 +1,14 @@
 # turbine-in-steamcolumn
 
-One Paragraph of project description goes here
+To be announced. 
 
 ## Implementation
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+To implement this script file it is necessary to input vectors tr and tamb filled with experimental data. To call the function simply set a variable equal to it like so. 
+
+>> c = steamturbineData(tr, tamb)
+
+It is important to note that this function was designed to work specifically for the equation given and is not recommended to use in other scenarios. 
 
 ## Required Software
 
@@ -16,4 +20,4 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Acknowledgments
 
-* **Tin Ngo** - *tngo019@ucr.edu*
+ **Tin Ngo** - *tngo019@ucr.edu*

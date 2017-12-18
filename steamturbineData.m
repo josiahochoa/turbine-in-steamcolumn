@@ -1,6 +1,6 @@
 function m = steamturbineData(tr, tamb); 
 %This function generates a set of values that can be used to solve for the
-%constants (c1,c2,...,c9) by inputting data for(tr,tamb). To actually dolve
+%constants (c1,c2,...,c9) by inputting data for(tr,tamb). To actually solve
 %for the constants use \ built-in function. 
 %
 %tout = c1 + c2*tamb + c3*tamb^2 + c4*tr + c5*tr^2 + c6*tamb*tr +
@@ -8,7 +8,7 @@ function m = steamturbineData(tr, tamb);
 %
 %Example: 
 %tr = [10 16 22]; tamb = [20 23 26];
-%c = sos(tr, tamb)
+%c = steamturbineData(tr, tamb)
 %
 
 
@@ -21,7 +21,6 @@ initMatrix = lengAmb*lengTr;
 %are initMatrix x InitMatrix.
 v = ones(initMatrix,initMatrix);
 z = ones(initMatrix,initMatrix);
-
 
 %This loop populates matrix v by plugging in tamb into tout accordingly for
 %each set of data.
@@ -36,8 +35,6 @@ for c = 1:lengAmb
     end
 end
 
-v
-
 %This loop populates matrix z by plugging in tr into tout accordingly for
 %each set of data.
 for d = 1:lengTr
@@ -49,8 +46,6 @@ for d = 1:lengTr
         z(d+t,:) = yy;
     end
 end
-
-z
 
 %This operation multiplies the matrix v and matrix z by element. 
 m = v.*z;

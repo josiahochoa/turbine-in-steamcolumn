@@ -1,10 +1,9 @@
 # turbine-in-steamcolumn
-
-To be announced. 
+The purpose of a steam column is to dissipate heat from a heat source to a heat sink (the environment). Many of the approaches for optimizing steam column performance and efficiency are based on numerical models. The column size depends on 
 
 ## Implementation
 
-To implement this script file it is necessary to input vectors tr and tamb filled with experimental data. The script will plug in each according value of tr and tamb to create a matrix of values. Thiis matrix of values can then be solved by the matlab built-in command '\'. 
+To implement this script file it is necessary to input vectors tr and tamb filled with experimental data. The script will plug in each according value of tr and tamb to create a matrix of values. This matrix of values can then be solved by the matlab built-in command '\'. 
 
 ![image](https://user-images.githubusercontent.com/33164967/34089092-9cc681aa-e362-11e7-9130-447e915ca459.png)
 

@@ -6,7 +6,7 @@ To be announced.
 
 To implement this script file it is necessary to input vectors tr and tamb filled with experimental data. The script will plug in each according value of tr and tamb to create a matrix of values. Thiis matrix of values can then be solved by the matlab built-in command '\'. 
 
-https://user-images.githubusercontent.com/33164967/34089092-9cc681aa-e362-11e7-9130-447e915ca459.png
+![image](https://user-images.githubusercontent.com/33164967/34089092-9cc681aa-e362-11e7-9130-447e915ca459.png)
 
 It is important to note that this function was designed to work specifically for the equation given and is not recommended to use in other scenarios. 
 
